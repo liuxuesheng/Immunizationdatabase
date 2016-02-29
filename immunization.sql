@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 29, 2016 at 05:34 PM
+-- Generation Time: Feb 29, 2016 at 11:54 PM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -92,9 +92,9 @@ INSERT INTO `immu_knowledge` (`id`, `immu_name`, `immu_description`, `immu_times
 (3, 'Rot', 'Rotavirus is the most common cause of severe vomiting and diarrhoea among infants and young children? It is a genus of double-stranded RNA virus in the family Reoviridae. Nearly every child in the world has been infected with rotavirus at least once by the age of five.  Immunity develops with each infection, so subsequent infections are less severe; adults are rarely affected? ', 2, 1),
 (4, 'MMR', 'The MMR vaccine protects against measles, mumps, and rubella. The vaccine contains weakened forms of the measles, mumps and rubella viruses that do not cause disease. The vaccine is approved by Health Canada.\r\nThe MMR vaccine is provided free as part of your child’s routine immunizations. Call your health care provider to make an appointment.\r\n', 2, 1),
 (5, 'Men-C-C', 'The Men-C vaccine protects against infection from one of the most common types of meningococcal bacteria, type C. The vaccine is approved by Health Canada.\r\nThe Men-C vaccine is provided free as part of your child’s routine immunizations. Call your health care provider to make an appointment.\r\n', 1, 1),
-(6, 'MMR  and Var\r\n', 'Varicella, also known as chickenpox, is a very common and highly infectious childhood disease that is found worldwide. Symptoms appear 10 to 21 days after infection and last about 2 weeks. The defining symptom is a characteristic blister-like rash, which can cause severe irritation. Most children have a relatively mild illness, but severe illness may occur in adults and people with depressed immunity because of existing illness or because of a treatment that they are receiving', 2, 1),
+(6, 'MMR  and Var', 'Varicella, also known as chickenpox, is a very common and highly infectious childhood disease that is found worldwide. Symptoms appear 10 to 21 days after infection and last about 2 weeks. The defining symptom is a characteristic blister-like rash, which can cause severe irritation. Most children have a relatively mild illness, but severe illness may occur in adults and people with depressed immunity because of existing illness or because of a treatment that they are receiving', 2, 1),
 (7, 'MMRV', 'Measles causes fever, rash, cough, and runny nose, and red, watery eyes. Complications can include ear infection, diarrhea, pneumonia, brain damage, and death. Mumps causes fever, headache, muscle aches, tiredness, loss of appetite, and swollen salivary glands. Complications can include swelling of the testicles or ovaries, deafness, inflammation of the. Rubella causes fever, sore throat, rash, headache, and red, itchy eyesVaricella (chickenpox) causes blister-like rash, itching, fever, and tiredness. Complications can include severe skin infection, scars, pneumo¬nia, brain damage, or death.', 2, 1),
-(8, 'DTaP-IPV\r\n', 'TaP-IPV is a combined vaccine that protects children against four diseases ? diphtheria, tetanus, pertussis and polio. The abbreviation ""aP"" stands for ""acellular pertussis."" This vaccine is recommended for use in infants and children younger than seven years. Diphtheria is a serious disease of the nose, throat and skin. It causes sore throat, fever and chills. It can be complicated by breathing problems, heart failure and nerve damage. Pertussis can also cause brain damage, seizures and death. Pertussis spreads very easily from an infected person to others through coughing or sneezing.', 1, 1),
+(8, 'DTaP-IPV', 'TaP-IPV is a combined vaccine that protects children against four diseases ? diphtheria, tetanus, pertussis and polio. The abbreviation ""aP"" stands for ""acellular pertussis."" This vaccine is recommended for use in infants and children younger than seven years. Diphtheria is a serious disease of the nose, throat and skin. It causes sore throat, fever and chills. It can be complicated by breathing problems, heart failure and nerve damage. Pertussis can also cause brain damage, seizures and death. Pertussis spreads very easily from an infected person to others through coughing or sneezing.', 1, 1),
 (9, 'HB', 'Hepatitis B is an infectious disease caused by the hepatitis B virus (HBV) which affects the liver. It can cause both acute and chronic infections. Many people have no symptoms during the initial infection. Some develop a rapid onset of sickness with vomiting, yellowish skin, tiredness, dark urine and abdominal pain. Often these symptoms last a few weeks and rarely does the initial infection result in death. It may take 30 to 180 days for symptoms to begin. Most of those with chronic disease have no symptoms; however, cirrhosis and liver cancer may eventually develop.', 2, 1),
 (10, 'Men-C-ACYW135', 'Men-C-ACYW-135-CRM contains capsular polysaccharides from serogroups A (10 ?g), C (5 ?g), W135 (5 ?g) and Y (5 ?g). The vaccine contains no adjuvant, preservatives, or thimerosal. The container closures do not contain latex. The vaccine is packaged in two separate vials that are mixed prior to administration. Subsequently, 0.5 ml of the reconstituted solution is withdrawn from the vial that previously contained the meningococcal A powder. There may be a small amount of reconstituted vaccine remaining in the vial after the 0.5 ml is withdrawn.', 1, 1),
 (11, 'HPV', 'HPV is the most common sexually transmitted infection (STI). HPV is a different virus than HIV and HSV (herpes). HPV is so common that nearly all sexually active men and women get it at some point in their lives. There are many different types of HPV. Some types can cause health problems including genital warts and cancers. But there are vaccines that can stop these health problems from happening.', 2, 1),
@@ -105,6 +105,16 @@ INSERT INTO `immu_knowledge` (`id`, `immu_name`, `immu_description`, `immu_times
 (16, 'HA', 'Hepatitis A is an infection of the liver caused by a virus. Adults and children are equally at risk. The virus most frequently spreads through direct contact with infected people or indirectly through ingestion of contaminated foods or water. Symptoms include fever, fatigue, loss of appetite, nausea, vomiting, abdominal pain, and jaundice (yellow skin and eyes).', 2, 0),
 (17, 'Typh-I', 'Typhoid vaccine can prevent typhoid. There are two vaccines to prevent typhoid. One is an inactivated (killed) vaccine gotten as a shot, and the other is live, attenuated (weakened) vaccine, which is taken orally (by mouth).', 3, 0),
 (18, 'BCG', 'Bacillus Calmette–Guérin (BCG) vaccine is a vaccine primarily used against tuberculosis. Tuberculosis (TB) is a potentially serious infectious disease that mainly affects your lungs. The bacteria that cause tuberculosis are spread from one person to another through tiny droplets released into the air via coughs and sneezes.', 1, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `immu_knowledge`
+--
+ALTER TABLE `immu_knowledge`
+  ADD PRIMARY KEY (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
