@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2016 at 11:43 PM
+-- Generation Time: Mar 08, 2016 at 04:11 AM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -42,7 +42,7 @@ CREATE TABLE `baby_infomation` (
 INSERT INTO `baby_infomation` (`email`, `nickname`, `birthdate`, `province`, `city`, `gender`) VALUES
 ('hjdn@gmail.com', '', '0000-00-00', '', '', 0),
 ('yhuang10@lakeheadu.ca', '', '0000-00-00', '', '', 0),
-('hanmingyue.hanna@gmail.com', 'error', '2016-03-10', 'Prince', '', 0);
+('hanmingyue.hanna@gmail.com', 'mingyue', '2016-02-02', 'Prince Edward Island', 'Thunder Bay', 0);
 
 -- --------------------------------------------------------
 
