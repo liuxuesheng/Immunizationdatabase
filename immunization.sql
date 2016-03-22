@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2016 at 04:41 PM
+-- Generation Time: Mar 22, 2016 at 06:16 AM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `baby_infomation` (
   `email` varchar(100) DEFAULT NULL,
+  `token` varchar(256) NOT NULL,
   `nickname` varchar(50) CHARACTER SET utf8 NOT NULL,
   `birthdate` date NOT NULL,
   `province` varchar(50) CHARACTER SET utf8 NOT NULL,
@@ -39,10 +40,13 @@ CREATE TABLE `baby_infomation` (
 -- Dumping data for table `baby_infomation`
 --
 
-INSERT INTO `baby_infomation` (`email`, `nickname`, `birthdate`, `province`, `city`, `gender`) VALUES
-('hjdn@gmail.com', '', '0000-00-00', '', '', 0),
-('yhuang10@lakeheadu.ca', '', '0000-00-00', '', '', 0),
-('hanmingyue.hanna@gmail.com', 'mingyue', '2016-02-02', 'Prince Edward Island', 'Thunder Bay', 0);
+INSERT INTO `baby_infomation` (`email`, `token`, `nickname`, `birthdate`, `province`, `city`, `gender`) VALUES
+('hanmingyue.hanna@gmail.com', '', 'nick', '2016-03-20', 'null', 'null', 0),
+('test@163.com', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612', 'tony', '0000-00-00', '', '', 0),
+('test@163.com', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612', 'sky', '2016-03-17', 'Ontario', 'Mississauga', 1),
+('test@163.com', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612', 'unfortunately', '2016-03-22', 'null', 'null', 0),
+('test@163.com', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612', 'ffg', '2016-03-22', 'null', 'null', 0),
+('test@163.com', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612', 'Tuesday', '2016-03-22', 'null', 'null', 0);
 
 -- --------------------------------------------------------
 
@@ -210,11 +214,13 @@ CREATE TABLE `userprofile` (
 --
 
 INSERT INTO `userprofile` (`email`, `hash`, `token`) VALUES
+('guochaohe@163.com', '$2a$10$j5O1u425bWbZ.aoltQji8eJQRmdo5BU7ugoQ1fdqxO5cpsEXG4naO', '8cc83973da1a10a7a15453d93f7035a9d33859f56a53a8984fb7a954d260bacf44197563653422736b5aa5796c3baf87a58a512730c98f1c3f96d0534740b643'),
 ('hanmingyue.hanna@gmail.com', '$2a$10$1rVaDLBf1rVpY7fz/nOqfezzIrq3ZmikP2DaM9UxdTCX7olAnjKEW', 'f1ca8b9d4416ac146567a4c40fc2441ce4411827576dd811caea1bf6e1c6c0574aab74f42ed8e009ed858b5eb009351e61b55c166a69249cd843cacfeee25597'),
 ('hhshshd@jsj.xs', '$2a$10$OkeHRS69MYzfEK2VngmSLuXLB5i8e3QuNuuuVI29kYXnMdRzAvvrC', '8400be995c2dafa633fc1a4700b1a85ea42464fbfc3a3337e66b322c5d359d40316dea8a77c46ca56475606abd29f52def71c726f71023ddff913c8a4dd187e0'),
 ('hjdn@gmail.com', '$2a$10$YyArGq4Ofeg4UvEyJC3Es.t0jf4y.usrBp7yGgZqftOsCVbxWHIoy', '7fba8e58249947099c091eb3ec803c6b106a65987cba405804afd85834695b7c8cd7c8d4b268c6030161c4511ba649671ba5a6336d8fe1df55f13aa8c2f8bec0'),
 ('jsj@jdj.co', '$2a$10$xVHgLnaGLLzNRX0a/9xETe.8VMgdnmyT.qZr.VO3MPuiv66LK2Caa', 'f58413750b053d9dd14ea8e3c21189a348b061c93d4d38d4ca51e3f16f94791925700ea47b897cb1d68207806a3ad2d3ad88aaa8c74f9436bc9a0a6e50d155c2'),
 ('sdsa@gmail.com', '$2a$10$fGZGUHoiR.vE/K64gbLBS.ECeZvQ7zbV4JMgdmsGkMrahA6.E77ei', ''),
+('test@163.com', '$2a$10$J5xg91SiRLjgLQMLTRq0bO55Ftqvlk8fS/wNe8fEqCbnYfVuwTQlW', 'f4ec47aa8a5094f22901983b097931df51c4a080feb9baac30f030ad914bf5fb8f78132409f0290aaf5797b7b2ae925c37ab988d14d9cb3b80e8db16c2eff612'),
 ('test@gmail.com', '$2a$10$jdji1aFQMO.CRhzisYh9d.lHcNtnAXpG0n7Jy74cwHnoRcKx.CipO', '4d4d7f4d6181da23dc0c9f7a5bcbecd0969b58229a39d322187072c6fc7f7e4fd8123ca15285f0f52d7c485cc604fee4b6c463a4a619fc3ff7acf990bb8e4faa'),
 ('yhuang10@lakeheadu.ca', '$2a$10$BU9BjCzxtGPnvrYheHBEyO4gqKeTCryVZEFv2UWH2lRaHQAWoeLcy', 'ab5e6d808390bcc24fb534c15d0eecea7bd842b426dd2fa585ee0e7b99518f2539f06625f60060b2f4aad95ae469be99462ddaec342a5d58a84de6cc0ed3d45f');
 
